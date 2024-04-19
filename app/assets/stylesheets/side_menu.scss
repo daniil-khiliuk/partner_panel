@@ -1,0 +1,84 @@
+.side-menu {
+    width: 260px;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    top: 80px;
+    left: 0px;
+
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.side-menu .side-menu-link {
+    padding-right:  16px;
+    padding-top:    12px;
+    padding-bottom: 12px;
+    height:         48px;
+
+    font-size: 16px;
+}
+
+.side-menu .side-menu-link.level-1 {
+    padding-left:   16px;
+}
+
+.side-menu .side-menu-link.level-1:hover {
+    color: $secondary-color;
+}
+
+.side-menu .side-menu-link.level-2 {
+    padding-left:   48px;
+}
+
+.side-menu .side-menu-link:hover {
+    background-color: $gray-300;
+}
+
+.side-menu {
+    .accordion-item {
+        border: none;
+    }
+
+    .accordion-button:hover {
+        color: $secondary-color;
+    }
+
+    .accordion-button {
+        padding-left: 16px;
+        font-size: 16px;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+        background-color: white;
+    }
+
+    .accordion-button:not(.collapsed) {
+        box-shadow: none;
+        background-color: white;
+    }
+
+    .accordion-collapse {
+        background-color: rgba(152, 184, 227, 0.1);
+
+        .side-menu-link {
+            transition: all ease 0.2s;
+        }
+
+        .side-menu-link:hover {
+            background-color: rgba(152, 184, 227, 0.4);
+
+            a {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+.side-menu.show {
+    transition: all 1s cubic-bezier(0, .5, .5, 1);
+} 
+
+.side-menu {
+    transition: all 1s cubic-bezier(0, .5, .5, 1);
+}

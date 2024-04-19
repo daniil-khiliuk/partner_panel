@@ -1,0 +1,47 @@
+.barcontainer-vertical {
+    background-color: #afc9f1;
+    width: 10px;
+    height: 100px;
+    position: relative;
+    
+    .bar {
+        background-color: #4b8dd5;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80%;
+        animation: grow-vertical 1.5s ease-out forwards;
+        transform-origin: bottom;
+    }
+}
+
+
+
+.barcontainer-horizontal {
+    background-color: #afc9f1;
+    width: 100%;
+    height: 10px;
+    position: relative;
+    
+    .bar {
+        background-color: #4b8dd5;
+        position: absolute;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        animation: grow-horizontal 1.5s ease-out forwards;
+        transform-origin: left;
+    }
+}
+
+@keyframes grow-vertical {
+    from {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes grow-horizontal {
+    from {
+        transform: scaleX(0);
+    }
+}

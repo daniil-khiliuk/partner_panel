@@ -1,0 +1,51 @@
+.form-control {
+    background-color: rgba(29, 43, 66, .08);
+    border: 1px solid rgba(29, 43, 66, .08);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid $primary_color;
+}
+
+.form-control:hover {
+    box-shadow: none;
+    border: 1px solid $primary_color;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: $placeholder_color;
+} 
+
+.form-control::-moz-placeholder {
+    color: $placeholder_color;
+}
+
+.otp-control {
+    background-color: white;
+    border: 1px solid #dee2e6;
+}
+
+// select2 custom styles
+
+.select2-container--bootstrap-5 .select2-selection {
+    border: 1px solid rgba(29, 43, 66, .08);
+    background-color: rgba(29, 43, 66, .08);
+}
+
+.select2-container--bootstrap-5 .select2-selection:hover {
+    border: 1px solid $primary_color;
+}
+
+.select2-container--bootstrap-5 .select2-selection:focus {
+    border: 1px solid $primary_color;
+}
+
+.select2-container--bootstrap-5.select2-container--open .select2-selection {
+    box-shadow: none;
+    border: 1px solid $primary_color;
+}
+
+.select2-container--bootstrap-5.select2-container--focus .select2-selection{
+    box-shadow: none;
+}

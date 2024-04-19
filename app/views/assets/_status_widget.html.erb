@@ -1,0 +1,101 @@
+<div class="widget mt-4">
+    <div class="status-widget p-4">
+        <div class="row g-0 justify-content-between">
+            <div class="col">
+                <h3>Статус партнера</h3>
+            </div>
+
+            <div class="col-auto">
+                <a href="#" class='text-primary'>История</a>
+            </div>
+        </div>
+
+        <div class="row g-0 mt-4">
+            <div class="status-rules col-8 p-3">
+                <div class='mb-2 row g-0 align-items-center'>
+                    <div class="col-auto g-0">
+                        <img src=<%= image_url('account-silver.png') %> width="32" height="32">
+                    </div>
+
+                    <div class="ms-2 col-auto g-0 text-secondary">
+                        <b>SILVER</b>
+                    </div>
+                </div>
+
+                <div class="row g-0">
+                    <div class='col-auto g-0'>
+                        <div class="barcontainer-vertical" style='margin-left: 11px;'>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="status-rule-item ms-4 col-3 card p-2">
+                        <span class='fs-sm mb-2 text-secondary'>Условие повышения статуса 1</span>
+                        <span>0/5000</span>
+
+                        <div class="barcontainer-horizontal mt-1">
+                            <div class="bar"></div>
+                        </div>
+
+                        <span class='fs-sm mb-2 text-secondary'>Сумма RN заказов за квартал</span>
+                    </div>
+
+                    <div class="col-auto align-self-center">
+                            <img src=<%= image_url('plus-sign.png') %> width="32" height="32">
+                    </div>
+
+                    <div class="status-rule-item col-3 card p-2">
+                        <span class='fs-sm mb-2 text-secondary'>Условие повышения статуса 2</span>
+                        <span >0/100</span>
+
+                        <div class="barcontainer-horizontal mt-1">
+                            <div class="bar"></div>
+                        </div>
+
+                        <span class='fs-sm mb-2 text-secondary'>Сумма SO заказов за квартал</span>
+                    </div>
+
+                    <div class="col-auto align-self-center">
+                            <img src=<%= image_url('plus-sign.png') %> width="32" height="32">
+                    </div>
+
+                    <div class="status-rule-item col-3 card p-2">
+                        <span class='fs-sm text-secondary mb-2'>Условие повышения статуса 3</span>
+                        <span >0/5</span>
+
+                        <div class="barcontainer-horizontal mt-1">
+                            <div class="bar"></div>
+                        </div>
+
+                        <span class='fs-sm text-secondary mb-2'>Количество активных подписок</span>
+                    </div>
+                </div>
+                
+                <div class='mt-2 row g-0 align-items-center'>
+                    <div class="col-auto g-0">
+                        <img src=<%= image_url('account-registered.png') %> width="32" height="32">
+                    </div>
+
+                    <div class="ms-2 col-auto g-0 text-secondary">
+                        <b style='color: #4093EA;'>REGISTERED</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col p-4 pt-1 pb-1">
+                <div class="rules-text" style='height: 200px; overflow: auto;'>
+                    <p>Правила</p>
+                    <p class='text-secondary'>1. Ваша следующая проверка статуса произойдет 1 июля 2024г.</p>
+                    <p>2. Статус партнера в Беларуси устанавливается в зависимости от: количества включенных подписок (привлеченных услуг), 
+                        общей стоимости заказанных и оплаченных клиентами услуг за 6 месяцев.
+                    </p>
+
+                    <p>
+                        3. Статус партнера пересматривается ежемесячно статус партнера будет пересматриваться для перехода на более высокий уровень (Silver и Gold). 
+                        Кроме того статус проверяется раз в 3 месяца (1 января, 1 апреля, 1 июля, 1 октября) статус партнера пересматривается для повышения/снижения уровня.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

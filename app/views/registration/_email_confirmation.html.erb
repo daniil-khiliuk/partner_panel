@@ -1,0 +1,86 @@
+<%= turbo_frame_tag 'registration_form' do %>
+    <div class="main-form-title text-center">
+        <h3>Партнерская программа</h1>
+    </div>
+    
+
+    <div class="main-form-caption text-center">
+        <p class="text-secondary">Код подтверждения эл. почты</p>
+    </div>
+
+    <div class="main-form row justify-content-center animated animated-before position-relative" data-controller='appear-form steps'>
+        <div class="col-5">
+            <div class="form-elements">
+                <form action="/confirm_email" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <span>Эл. почта</span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col">
+                            <span class="fs-5 text-decoration-underline">email@activecloud.by</span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="">Код подтверждения</label>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4" id=otp data-controller="otp">
+                        <div class="col-auto">
+                            <input type="text" name="number1" id="number1" class="form-control otp-control" maxlength="1">
+                        </div>
+
+                         <div class="col-auto">
+                            <input type="text" name="number2" id="number2" class="form-control otp-control" maxlength="1">
+                        </div>
+
+                         <div class="col-auto">
+                            <input type="text" name="number3" id="number3" class="form-control otp-control" maxlength="1">
+                        </div>
+
+                         <div class="col-auto">
+                            <input type="text" name="number4" id="number4" class="form-control otp-control" maxlength="1">
+                        </div>
+
+                         <div class="col-auto">
+                            <input type="text" name="number5" id="number5" class="form-control otp-control" maxlength="1">
+                        </div>
+
+                         <div class="col-auto">
+                            <input type="text" name="number6" id="number6" class="form-control otp-control" maxlength="1">
+                        </div>
+
+                        <div class="col">
+                            <button class='btn btn-primary d-flex w-100 h-100 align-items-center justify-content-center' data-action="otp#send">Отправить код</button>
+                        </div>
+                    </div>
+        
+                    <div class="row mb-4">
+                        <div class="col">
+                            <input type="submit" value="Продолжить" class="btn btn-primary w-100" data-action='steps#next_otp'>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col">
+                            <a href="/additional_info" class="btn btn-light w-100" data-action='steps#back otp-control'>Назад</a>
+                            <%# <input type="submit" value="Продолжить" class="btn btn-primary w-100"> %>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col text-center">
+                            <span>Уже являетесь партнером ActiveCloud?</span>
+                            <a href="sign_in" class='text-primary ms-1' data-turbo-frame='_top'>Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% end %>

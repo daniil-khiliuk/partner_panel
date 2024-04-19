@@ -1,0 +1,97 @@
+@import './side_menu.scss';
+@import './header.scss';
+@import './footer.scss';
+@import './animation_elements/progress_bar.scss';
+
+.mt-5 {
+    margin-top: 2rem;
+}
+
+.mt-6 {
+    margin-top: 2.5rem;
+}
+
+.m-0-auto {
+    margin: 0 auto;
+}
+
+
+.fs-sm {
+    font-size: 14px;
+}
+
+.fs-md {
+    font-size: 16px;
+}
+
+.fs-xl {
+    font-size: 18px;
+}
+
+body {
+    font-family: "proxima_nova";
+    font-style: normal;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    margin: 0px;
+    padding: 0px;
+    -webkit-font-smoothing: antialiased;
+    
+    .session {
+        background-color: white;
+    }
+
+    .main-content {
+        background-color: #f7f7f7;
+    }
+}
+
+.main-bg-color {
+    // background-color: #f7f7f7;
+    // background-color: #eee;
+}
+
+
+
+.main-content {
+    margin-left: 260px;
+    z-index: 0;
+}
+
+.widget {
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    background-color: white;
+}
+
+.overview-widget .widget-item {
+    .card {
+        border-color: rgba(255, 79, 0, 0.07);
+        border-radius: 8px;
+        background-color: rgba(255, 79, 0, 0.07);
+        transition: all ease 0.2s;
+    }
+
+
+    .card:hover {
+        background-color: rgba(255, 79, 0, 0.5);
+    } 
+
+    .account-growth {
+        background-color: rgba(242, 107, 54, 0.23);
+        border-radius: 8px;
+    }
+}
+
+.status-rules {
+    color: white;
+    background: linear-gradient(90.89deg, rgb(152 184 227 / 40%) 1.12%, #afc9f1 99.26%)
+}
+
+.status-rules .status-rule-item {
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+}

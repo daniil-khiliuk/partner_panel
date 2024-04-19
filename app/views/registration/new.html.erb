@@ -1,0 +1,162 @@
+<%= turbo_stream_from "registration_form" %>
+
+<%= render partial: 'shared/header_sessions' %>
+
+<div class="container pt-2 ps-2 pe-2">
+	<div class="registration-form">
+		<div class="row justify-content-center mb-4">
+			<div class="registration-steps row col-10">
+				<div class="col-3 position-relative">
+					<div class="position-absolute step-line"></div>
+					<div class="step-icon-fill"></div>
+
+					<div class="step-caption text-center">
+						Регистрация аккаунта
+					</div>
+				</div>
+
+				<div class="col-3 position-relative">
+					<div class="position-absolute step-line"></div>
+					<div class="step-icon"></div>
+
+					<div class="step-caption text-center">
+						Расскажите о себе
+					</div>
+				</div>
+
+				<div class="col-3 position-relative">
+					<div class="position-absolute step-line"></div>
+					<div class="step-icon"></div>
+
+					<div class="step-caption text-center">
+						Верификация по эл. почте
+					</div>
+				</div>
+
+				<div class="col-3 position-relative">
+					<div class="step-icon"></div>
+
+					<div class="step-caption text-center">
+						Завершение регистрации
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<%= turbo_frame_tag 'registration_form' do %>
+			<div class="main-form-title text-center">
+				<h3>Партнерская программа</h3>
+			</div>
+			
+
+			<div class="main-form-caption text-center">
+				<p class="text-secondary">Пройдите регистрацию и начните зарабатывать в качестве Партнера ActiveCloud</p>
+			</div>
+
+			<div class="main-form row justify-content-center animated animated-before position-relative" data-controller='appear-form steps'>
+				<div class="col-5">
+					<div class="form-elements">
+						<form action="/register" method="post" class='needs-validation' data-controller='form-validation' novalidate >
+							<div class="row mb-4">
+								<div class="col">
+									<input type="text" name="inputName" id="inputName" class="form-control" placeholder="Имя" required>
+									<div class="invalid-feedback">
+										Введите ваше имя
+									</div>
+								</div>
+				
+								<div class="col">
+									<input type="text" name="inputLastName" id="inputLastName" class="form-control" placeholder="Фамилия" required>
+									<div class="invalid-feedback">
+										Введите вашу фамилию
+									</div>
+								</div>
+								
+							</div>
+				
+							<div class="row mb-4">
+								<div class="col">
+									<input type="email" name="inoutEmail" id="inputEmail" class="form-control" placeholder="Эл. почта" required>
+									
+									<div class="invalid-feedback">
+										Введите ваш эл. адрес
+									</div>
+								</div>
+							</div>
+				
+							
+
+							<div class="password mb-4" data-controller='password'>
+								<div class="row mb-2">
+									<div class="col position-relative">
+										<input type="password" name="inputPassword" id="inputPassword" class="form-control input-control rounded" placeholder="Пароль" 
+											data-password-target='inputPassword' data-action='click->password#showToggle input->password#checkPassword' required>
+										
+										<div class="invalid-feedback">
+											Введите ваш пароль
+										</div>
+
+										<button id="toggle-password" type="button" class="d-none" data-password-target='toggle' 
+											data-action='click->password#togglePassword'>
+										</button>
+									</div>
+								</div>
+					
+								<div class="row">
+									<div class="col pe-0">
+										<div class="password-line disable-bg"></div>
+									</div>
+
+									<div class="col ps-1 pe-0">
+										<div class="password-line disable-bg"></div>
+									</div>
+
+									<div class="col ps-1 pe-0">
+										<div class="password-line disable-bg"></div>
+									</div>
+									
+									<div class="col ps-1">
+										<div class="password-line disable-bg"></div>
+									</div>
+								</div>
+
+								<div class="row justify-content-end">
+									<div class="col text-end text-secondary">
+										<span class="password-caption">Пароль очень слабый</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mb-4">
+								<div class="col">
+									<select name="selectCountry" id="selectCountry" class="form-select js-example-basic-single" data-controller='select2'>
+										<option value="BY">Беларусь</option>
+										<option value="RU">Россия</option>
+									</select>
+								</div>
+							</div>
+				
+							<div class="row mb-4">
+								<div class="col">
+									<input type="submit" value="Продолжить" class="btn btn-primary w-100" data-action='steps#next'>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col text-center">
+									<span>Уже являетесь партнером ActiveCloud?</span>
+									<a href="/sign_in" class='text-primary ms-1' data-turbo-frame="_top">Войти</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		<% end %>	
+	</div>
+</div>
+
+<div style="margin-top: 8vh">
+	<%= render 'footer' %>
+</div>

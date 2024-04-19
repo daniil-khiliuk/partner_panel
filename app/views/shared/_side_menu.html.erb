@@ -1,0 +1,94 @@
+<div class="side-menu show" data-controller='side-menu' data-side-menu-target='controller'>
+    <div class="row g-0">
+        <div class="col-12 g-0">
+            <div class="side-menu-link level-1">
+                <img src=<%= image_url('side-menu-dashboard-icon.png') %> width="24" height="24">
+                <a class='ms-2' href="#">Управление</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="accordion" id='myAchiviements'>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#myAchivimentsSubMenu" aria-expanded="false" 
+                    aria-controls="myAchivimentsSubMenu">
+
+                    <img src=<%= image_url('side-menu-goals-icon.png') %> width="24" height="24">
+                    <span style='margin-left: 12px;'>Мои успехи</span>
+                </button>
+            </h2>
+
+            <div id="myAchivimentsSubMenu" class="accordion-collapse collapse" data-bs-parent="#myAchiviements">
+                    <div class="row g-0">
+                    <div class="col-12 g-0">
+                        <div class="side-menu-link level-2">
+                            <a href="">Привлеченные услуги</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0">
+                    <div class="col-12 g-0">
+                        <div class="side-menu-link level-2">
+                            <a href="#">Кооперации</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-0">
+                    <div class="col-12 g-0">
+                        <div class="side-menu-link level-2">
+                            <a href="#">Статистика</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row g-0">
+        <div class="col-12 g-0">
+            <div class="side-menu-link level-1">
+                <img src=<%= image_url('side-menu-requisites-icon.png') %> width="24" height="24">
+                <a class='ms-2' href="#"> Реквизиты</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-0">
+        <div class="col-12 g-0">
+            <div class="side-menu-link level-1">
+                <img src=<%= image_url('side-menu-withdraw-icon.png') %> width="24" height="24">
+                <a class='ms-2' href="#">Условия выплат</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-0">
+        <div class="col-12 g-0">
+            <div class="side-menu-link level-1">
+                <img src=<%= image_url('side-menu-adversary-icon.png') %> width="24" height="24">
+                <a class='ms-2' href="#">Рекламные материалы</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="support position-fixed" style='bottom: 0px;'>
+        <div class="row">
+            <div class="col">
+                Ваше менеджер
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                partners@active.by
+            </div>
+        </div>
+    </div>
+  
+
+    <%# <button class='btn btn-primary' data-action='side-menu#toggle'>Click</button> %>
+</div>

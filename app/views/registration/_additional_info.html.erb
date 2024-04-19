@@ -1,0 +1,134 @@
+<%= turbo_frame_tag 'registration_form' do %>
+    <div class="main-form-title text-center">
+        <h3>Партнерская программа</h1>
+    </div>
+    
+
+    <div class="main-form-caption text-center">
+        <p class="text-secondary">Заполните дополнительную информацию о себе</p>
+    </div>
+
+    <div class="main-form row justify-content-center animated animated-before position-relative" data-controller='appear-form steps'>
+        <div class="col-5">
+            <div class="form-elements">
+                <form action="/approve_additional_info" method="post" class='needs-validation' data-controller='form-validation' novalidate>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <input type="text" name="inputOrgName" id="inputOrgName" class="form-control" placeholder="Название организации" required>
+
+                            <div class="invalid-feedback">
+								Введите название вашей организации
+							</div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col">
+                            <input type="text" name="inputSite" id="inputSite" class="form-control" placeholder="Адрес сайта" required>
+
+                            <div class="invalid-feedback">
+                                Введите ваш адрес сайта
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row mb-4">
+                        <div class="col">
+                            <input type="text" name="inputPhone" id="inputPhone" class="form-control" placeholder="Контактный телефон" required>
+
+                            <div class="invalid-feedback">
+                                Введите ваш контактный телефон
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <input type="text" name="inputTelegram" id="inputTelegram" class="form-control" placeholder="Телеграм" required>
+
+                            <div class="invalid-feedback">
+                                Введите ваш телеграм
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-selectors" style='margin-top: 4vh;'>
+                        <div class="row mb-4 align-items-center">
+                            <div class="col">
+                                <label for="selectForm">Выбирите тип своего акккаунта</label>
+                            </div>
+
+                            <div class="col">
+                                <select name="selectType" id="selectType" class="form-select js-example-basic-single" data-controller='select2'>
+                                    <option value="1">Юридическое лицо</option>
+                                    <option value="2">Индивидуальынй предприниматель</option>
+                                    <option value="3">Физическое лицо</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4 align-items-center">
+                            <div class="col">
+                                <label for="selectForm">Как вы узнали о Партнерской программе ActiveCloud?</label>
+                            </div>
+
+                            <div class="col">
+                                <select name="selectFrom" id="selectFrom" class="form-select js-example-basic-single" data-controller='select2'>
+                                    <option value="1">Рекомендация знакомого</option>
+                                    <option value="2">На мероприятии</option>
+                                    <option value="3">Видел баннер</option>
+                                    <option value="4">Другое</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4 align-items-center">
+                            <div class="col">
+                                <label for="selectForm">Выбирите менеджера</label>
+                            </div>
+
+                            <div class="col">
+                                <select name="selectManager" id="selectManager" class="form-select js-example-basic-single" data-controller='select2'>
+                                    <option value="1">Менеджер1</option>
+                                    <option value="2">Менеджер2</option>
+                                    <option value="3">Менеджер3</option>
+                                    <option value="4">Менеджер4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label text-secondary" for="flexCheckChecked">
+                                    Я ознакомился с условиями <a href="" class='text-primary'>партнераства</a> и выражаю <a href="" class='text-primary'>согласие</a> на обработку персональных данных
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row mb-4">
+                        <div class="col">
+                            <input type="submit" value="Продолжить" class="btn btn-primary w-100" data-action="steps#next">
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col">
+                            <a href="/sign_up" class="btn btn-light w-100" data-action="steps#back">Назад</a>
+                            <%# <input type="submit" value="Продолжить" class="btn btn-primary w-100"> %>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col text-center">
+                            <span>Уже являетесь партнером ActiveCloud?</span>
+                            <a href="sign_in" class='text-primary ms-1' data-turbo-frame='_top'>Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<% end %>

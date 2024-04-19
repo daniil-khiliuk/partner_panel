@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('ProximaNova-Regular.eot');
+    src: url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('ProximaNova-Regular.woff') format('woff'),
+    url('ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import './variables/base.scss';
+@import './bg_states.scss';
+
+@import './show-password-toggle.scss';
+
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+@import 'select2/dist/css/select2';
+@import 'select2-bootstrap-5-theme/dist/select2-bootstrap-5-theme';
+
+@import './main.scss';
+@import './fonts.scss';
+@import './shapes.scss';
+@import './buttons.scss';
+@import './scrollbar.scss';
+@import './links.scss';
+@import './registration.scss';
+@import './form_elements.scss';
+@import './validation.scss';

@@ -1,0 +1,237 @@
+<div class="widget overview-widget p-4" style='background-color: white;'>
+    <div class="row justify-content-between">
+        <div class="col">
+            <h4>Обзор</h4>
+        </div>
+
+        <div class="col-auto">
+            <div class="row">
+                <div class="col-auto">
+                    <select class='form-select' name="selectDate" id="selectDate">
+                        <option value="1">Последние 3 дня</option>
+                        <option value="1">Последние 7 дней</option>
+                        <option value="1">Последний месяц</option>
+                    </select>
+                </div>
+
+                <div class="col-auto">
+                    <button class='btn btn-primary'>Экспорт</button>
+                </div>
+            </div>             
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="general-amount mb-4">
+        <div class="row">
+            <div class="col">
+                <span><h3>0.00 руб.</h3></span>
+            
+            </div>
+
+            <div class="col">
+                ICON
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <span class='text-secondary'>Всего накопленных средств</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="row justify-content-between">
+        <div class="col-3 widget-item">
+            <div class="card p-2">
+                <div class="row g-0 align-items-center">
+                    <div class="col-auto g-0">
+                        <img src=<%= image_url('new-account-icon.png') %> width="48" height="48">
+                    </div>
+
+                    <div class="col g-0">
+                        <div class="total-account">
+                            <h4><b>10</b></h4>
+                        </div>
+
+                        <div class="total-account-caption text-secondary fs-sm">
+                            Аккаунты
+                        </div>
+                    </div>
+
+                    <div class="col-auto g-0">
+                        <div class="account-growth just ps-1 pt-0 pe-2 pb-1">
+                            <div class="row g-0">
+                                <div class="col-auto g-0">
+                                    <img src=<%= image_url('account-icon.png') %> width="24" height="24">
+                                </div>
+
+                                <div class="col-auto g-0 ms-2 mt-1">
+                                    <b>0</b>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-2 return-arrow-icon justify-content-end">
+                            <div class="col-auto">
+                                <img src=<%= image_url('return-arrow.png')%> width="24" height="24">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-3 widget-item">
+            <div class="card p-2">
+                <div class="row g-0 align-items-center">
+                    <div class="col-auto g-0">
+                        <img src=<%= image_url('money-icon.png') %> width="48" height="48">
+                    </div>
+
+                    <div class="col g-0">
+                        <div class="total-account">
+                            <h4><b>25</b></h4>
+                        </div>
+
+                        <div class="total-account-caption text-secondary fs-sm">
+                            Заказы
+                        </div>
+                    </div>
+
+                    <div class="col-auto g-0">
+                        <div class="account-growth just ps-1 pt-0 pe-2 pb-1">
+                            <div class="row g-0">
+                                <div class="col-auto g-0">
+                                    <img src=<%= image_url('account-icon.png') %> width="24" height="24">
+                                </div>
+
+                                <div class="col-auto g-0 ms-2 mt-1">
+                                    <b>0</b>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-2 return-arrow-icon justify-content-end">
+                            <div class="col-auto">
+                                <img src=<%= image_url('return-arrow.png')%> width="24" height="24">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-3 widget-item">
+            <div class="card p-2">
+                <div class="row g-0 align-items-center">
+                    <div class="col-auto g-0">
+                        <img src=<%= image_url('subscriptions-icon.png') %> width="48" height="48">
+                    </div>
+
+                    <div class="col g-0">
+                        <div class="total-account">
+                            <h4><b>10</b></h4>
+                        </div>
+
+                        <div class="total-account-caption text-secondary fs-sm">
+                            Подписки
+                        </div>
+                    </div>
+
+                    <div class="col-auto g-0">
+                        <div class="account-growth just ps-1 pt-0 pe-2 pb-1">
+                            <div class="row g-0">
+                                <div class="col-auto g-0">
+                                    <img src=<%= image_url('account-icon.png') %> width="24" height="24">
+                                </div>
+
+                                <div class="col-auto g-0 ms-2 mt-1">
+                                    <b>0</b>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-2 return-arrow-icon justify-content-end">
+                            <div class="col-auto">
+                                <img src=<%= image_url('return-arrow.png')%> width="24" height="24">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-3 widget-item">
+            <div class="card p-2">
+                <div class="row g-0 align-items-center">
+                    <div class="col-auto g-0">
+                        <img src=<%= image_url('subpartners-icon.png') %> width="48" height="48">
+                    </div>
+
+                    <div class="col g-0">
+                        <div class="total-account">
+                            <h4><b>2</b></h4>
+                        </div>
+
+                        <div class="total-account-caption text-secondary fs-sm">
+                            Кооперации
+                        </div>
+                    </div>
+
+                    <div class="col-auto g-0">
+                        <div class="account-growth just ps-1 pt-0 pe-2 pb-1">
+                            <div class="row g-0">
+                                <div class="col-auto g-0">
+                                    <img src=<%= image_url('account-icon.png') %> width="24" height="24">
+                                </div>
+
+                                <div class="col-auto g-0 ms-2 mt-1">
+                                    <b>0</b>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-2 return-arrow-icon justify-content-end">
+                            <div class="col-auto">
+                                <img src=<%= image_url('return-arrow.png')%> width="24" height="24">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="amount-details">
+        <div class="row mt-4 mb-4">
+            <div class="col">
+                <span class='text-secondary'>Информация об общей сумме заработка</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <h4>0.00 руб.</h4>
+                <div class="title text-secondary">Общая сумма заказов</div>
+            </div>
+
+            <div class="col-3">
+                <h4>0.00 руб.</h4>
+                <div class="title text-secondary">Общая сумма прибыли с заказов</div>
+            </div>
+
+            <div class="col-3">
+                <h4>0.00 руб.</h4>
+                <div class="title text-secondary">Общая сумма прибыли от коопраций</div>
+            </div>
+
+            <div class="col-3">
+                <h4>0.00 руб.</h4>
+                <div class="title text-secondary">Общая сумма вывода</div>
+            </div>
+        </div>
+    </div>
+</div>

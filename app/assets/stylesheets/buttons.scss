@@ -1,0 +1,55 @@
+.btn-light {
+    border-color: gray;
+    background-color: white;
+}
+
+
+.sign-buttons .btn-light {
+    width: 120px;
+}
+
+.btn-light:hover {
+    background-color: #f8f9fa;
+}
+
+.btn-orange {
+    background-color: #f07622;
+    border-color: #f07622;
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: #e56107;
+    border-color: #e56107;
+    color: white;
+}
+
+.btn.btn-disabled {
+    background-color: #e3e8ed;
+    border-color: #e3e8ed;
+    color: #a2a9b6;
+    pointer-events: none;
+}
+
+.btn-primary {
+    background: linear-gradient(
+        271deg,
+        #fe904b 7.64%,
+        #fe904b 7.64%,
+        #fb724c 90.67%,
+        #fb724c 90.68%
+      ),
+      #ee5757;
+    
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(271deg, #d66a26 7.64%, #e85c35 90.68%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn.btn-disabled:disabled {
+
+}

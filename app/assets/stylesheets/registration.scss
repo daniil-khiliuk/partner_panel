@@ -1,0 +1,44 @@
+.registration-steps {
+    margin-top: 5vh;
+}
+
+// For hide scroll when main-form animate
+.registration-form {
+    overflow: hidden;
+
+    .agreemnts {
+        margin-top: 5vh;
+    }
+}
+
+.main-form-title {
+    margin-top: 10vh;
+}
+
+.main-form-caption {
+    margin-top: 4vh;
+}
+
+.form-elements {
+    margin-top: 4vh;
+}
+
+.main-form.animated {
+    transition: top 1s cubic-bezier(0, .5, .5, 1);
+}
+
+.main-form.animated.animated-before {
+    top: 450px;
+}
+
+.main-form.animated.animated-after {
+    top: 0px;
+}
+
+#otp input[type="text"] {
+    height: 55px;
+    width: 40px;
+    font-size: 32px;
+    text-align: center;
+    padding: 0px;
+}

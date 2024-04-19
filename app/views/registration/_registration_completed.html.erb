@@ -1,0 +1,22 @@
+<%= turbo_frame_tag 'registration_form' do %>
+    <div class="main-form animated animated-before position-relative" data-controller='appear-form'>
+        <div class="main-form-title text-center">
+            <img src="<%= image_url('checked-success.svg') %>" alt="" width="48" height="48">
+
+            <h3 class="mt-4">Спасибо</h3>
+        </div>
+        
+
+        <div class="main-form-caption text-center">
+            <p class="text-secondary">Ваша эл. почта подтверждена</p>
+        </div>
+
+        <div class='row justify-content-center' style="margin-top: 8vh;">
+            <div class="col-auto">
+                <a href="#" class="btn btn-primary p-3">Войти в личный кабинет</a>  
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 30vh;"></div>
+<% end %>

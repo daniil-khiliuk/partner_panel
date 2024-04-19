@@ -1,0 +1,73 @@
+<%= render partial: 'shared/header_sessions' %>
+
+
+<div class="container session p-2" style="margin-top: 10vh;" data-controller='validation'>
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <h3>Вход в партнерский кабинет</h3>
+
+            <form action="/login" method="post" class='mt-4'>
+                <div class="row">
+                    <div class="col">
+                        <label for="inputEmail">Партнерская почта</label>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col">
+                        <input type="text" name="inputEmail" id="inputEmail" class='form-control' placeholder='Введите адрес эл. почты' 
+                            data-validation-target='input' data-action='validation#valid'>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col">
+                        <label for="inputPassword">Пароль</label>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col">
+                        <input type="text" name="inputPassword" id="inputPassword" class='form-control' placeholder='Введите ваш пароль' 
+                            data-validation-target='input' data-action='validation#valid'>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label fs-7" for="flexSwitchCheckDefault">Оставаться в системе на этом устроистве 5 дней</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col">
+                        <input type="submit" value="Войти" class="btn btn-disabled w-100"  data-validation-target='btn'>
+                    </div>
+                </div>
+
+                <div class="row mt-4 text-center">
+                    <div class="col">
+                        <a href="#" class='text-primary'>Забыли пароль?</a>
+                    </div>
+                </div>
+
+                <div class="row mt-2 text-center">
+                    <div class="col">
+                        Не являетесь партнером?
+                        <a href="/sign_up" class='text-primary'>Стать партнером</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div style="margin-top: 18vh;"></div>
+</div>
+
+
+<div style="margin-top: 10vh">
+	<%= render 'registration/footer' %>
+</div>

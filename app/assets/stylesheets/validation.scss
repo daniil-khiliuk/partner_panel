@@ -1,0 +1,44 @@
+.was-validated .form-control:valid, .form-control.is-valid {
+    background-color: rgba(29, 43, 66, .04);
+    border: 1px solid rgba(29, 43, 66, .04);
+    background-image: none;
+}
+
+.was-validated .form-control:valid:focus, .form-control.is-valid:focus {
+    box-shadow: none;
+    border: 1px solid $primary_color;
+}
+
+.was-validated .form-control:valid:hover, .form-control.is-valid:hover {
+    box-shadow: none;
+    border: 1px solid $primary_color;
+}
+
+.was-validated select:valid + .select2-container--bootstrap-5 .select2-selection {
+    background-color: rgba(29, 43, 66, .04);
+    border: 1px solid rgba(29, 43, 66, .04);
+}
+
+.was-validated select:valid + .select2-container--bootstrap-5.select2-container--open .select2-selection {
+    box-shadow: none;
+    border: 1px solid $primary_color
+}
+
+.was-validated select:valid + .select2-container--bootstrap-5.select2-container--focus .select2-selection {
+    box-shadow: none;
+    border: 1px solid $primary_color
+}
+
+
+// bootstrap checkbox
+.was-validated .form-check-input:valid {
+    border-color: #0d6efd;
+}
+
+.was-validated .form-check-input:valid:checked {
+    background-color: #0d6efd;
+}
+
+.was-validated .form-check-input:valid:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
