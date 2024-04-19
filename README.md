@@ -21,4 +21,9 @@ Things you may want to cover:
 
 * Deployment instructions
 
+Create image (in app directory):
+    docker build -t partners_panel .
+Create containe:
+    docker container run -i -t -p 8001:3000 partners_panel --name partners_panel
+
 * ...
